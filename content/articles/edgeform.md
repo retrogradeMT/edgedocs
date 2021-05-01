@@ -1,9 +1,9 @@
 ---
 title: Edge Form
 description: "A Dynamic form build by a JSON Schema"
-position: 5
+position: 2
 category: "mbrvault"
-author: Dustin
+author: Dustin Stewart
 
 corecomponents:
   - DateEdit
@@ -104,6 +104,18 @@ The edge-form loops through the active schema and creates a row containing a sin
 <td>String</td>
 <td>""</td>
 <td>Used only with the SubUpdate request to determine what the parent resource is.  This is a candidate for cleanup. </td>
+</tr>
+<tr>
+<td>noIcon</td>
+<td>Boolean</td>
+<td>false</td>
+<td>Changes the layout to remove the icon. This also changes the base layout b/c the icon uses 1 col in a 12 column grid.  If this is true, the input becomes a full 12 cols </td>
+</tr>
+<tr>
+<td>dense</td>
+<td>Boolean</td>
+<td>true</td>
+<td>Controls the vuetify dense prop. If set to false the form will not be `dense` </td>
 </tr>
 </tbody>
 
